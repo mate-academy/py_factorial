@@ -3,13 +3,10 @@ docstring
 """
 
 
-def fact(n: int) -> int:
+def fact(num: int) -> int:
     """
 
-    :param n:
+    :param num:
     :return:
     """
-    if n < 2:
-        return 1
-    else:
-        return n * fact(n - 1)
+    return num * fact(num - 1) if num else 1
