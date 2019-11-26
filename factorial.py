@@ -1,3 +1,15 @@
-def fact(n: int) -> int:
+"""
+docstring
+"""
 
-    return 42
+
+def fact(n: int) -> int:
+    """
+
+    :param n:
+    :return:
+    """
+    if n < 2:
+        return 1
+    else:
+        return n * fact(n - 1)
