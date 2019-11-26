@@ -1,3 +1,10 @@
-def fact(n: int) -> int:
+"""Factorial module"""
 
-    return 42
+def fact(number: int) -> int:
+    """
+    :param n: number
+    :return: number factorial
+    """
+    if number == 0:
+        return 1
+    return fact(number-1) * number
