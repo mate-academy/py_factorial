@@ -1,3 +1,8 @@
-def fact(n: int) -> int:
+"""module docstring"""
+import numpy
 
-    return 42
+def fact(number):
+    """function docstring"""
+    res_tuple = tuple(range(1, number + 1))
+    result = numpy.prod(res_tuple)
+    return result
