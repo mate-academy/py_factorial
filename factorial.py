@@ -1,3 +1,5 @@
-def fact(n: int) -> int:
+def fact(number: int) -> int:
+    if number == 0:
+        return 1
 
-    return 42
+    return number * fact(number - 1)
