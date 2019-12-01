@@ -1,3 +1,8 @@
-def fact(n: int) -> int:
+"""module"""
 
-    return 42
+
+def fact(number: int) -> int:
+    """recursive factorial!"""
+    if number < 1:
+        return 1
+    return number * fact(number - 1)
